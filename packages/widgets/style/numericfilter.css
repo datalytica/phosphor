@@ -1,0 +1,48 @@
+
+.p-NumericFilter {
+  display: flex;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: sans-serif;
+}
+
+.p-NumericFilter-input-wrapper {
+  padding: 5px;
+  display: flex;
+}
+
+.p-NumericFilter-input {
+  width: 50%;
+  border: 1px solid #E0E0E0;
+  outline: none;
+  font-size: 12px;
+}
+
+.p-NumericFilter-select {
+  width: 50%;
+  border: 1px solid #E0E0E0;
+  outline: none;
+  font-size: 12px;
+}
+
+.p-NumericFilter-title {
+  padding: 4px;
+  color: #757575;
+  font-size: 12px;
+  font-weight: 600;
+  background: #E1E1E1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-NumericFilter-titleCloseIcon {
+  font-size: 16px;
+  color: #C5C5C5;
+}
+
+.p-NumericFilter-titleCloseIcon:hover {
+  color: #757575;
+}
