@@ -1,0 +1,117 @@
+
+
+.dg-PivotSelector {
+  flex: 0 0 auto;
+  padding: 2px 5px;
+  min-height: 30px;
+  min-width: 200px;
+  font: 12px Roboto, Arial, sans-serif;
+  border-bottom: 1px solid #BDC3C7;
+  border-left: 1px solid #BDC3C7;
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  user-select: none;
+}
+
+.dg-PivotSelector .dg-PivotSelector-empty {
+  pointer-events: none;
+  opacity: 0.35;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dg-PivotSelector:first-child,
+.dg-PivotSelector:only-child {
+  border-left: 0px;
+}
+
+.dg-PivotSelector-title {
+  margin-right: 5px;
+  width: 80px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+
+.dg-PivotSelector-title-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.87;
+  margin-right: 5px;
+  min-width: 16px;
+  pointer-events: none;
+}
+
+.dg-PivotSelector-title-icon.dg-mod-row {
+  background: url(../images/row.svg) 0px 0px no-repeat;
+}
+.dg-PivotSelector-title-icon.dg-mod-column {
+  background: url(../images/column.svg) 0px 0px no-repeat;
+}
+.dg-PivotSelector-title-icon.dg-mod-aggregate {
+  background: url(../images/aggregate.svg) 0px 0px no-repeat;
+}
+
+.dg-PivotSelector-item {
+  padding: 2px 5px;
+  background: #DDE4E6;
+  border: 1px solid #DDE4E6;
+  border-radius: 16px;
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  font: 12px Roboto, Arial, sans-serif;
+}
+
+.dg-PivotSelector-item.p-mod-drag-image {
+  padding-right: 22px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  transform: translateX(-80%) translateY(-58%);
+}
+
+.dg-PivotSelector-chevron {
+  margin: 0 -3px;
+  pointer-events: none;
+  color: #BDC3C7;
+}
+
+.dg-PivotSelector-item:first-child {
+  margin-left: 0px;
+}
+
+.dg-PivotSelector-item-disabled {
+  opacity: .40;
+}
+
+.dg-PivotSelector.dg-mod-dropTarget {
+}
+
+.dg-PivotSelector-dragging.dg-PivotSelector-item,
+.dg-PivotSelector-dragging > .dg-PivotSelector-item-close {
+  pointer-events: none !important;
+}
+
+.dg-PivotSelector-item-label {
+  padding-left: 5px;
+  color: #757575;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dg-PivotSelector-item-close {
+  cursor: auto;
+  padding-left: 3px;
+  color: #BDC3C7;
+}
+
+.dg-PivotSelector-item:hover {
+  border: 1px solid #BDC3C7;
+}
+
+.dg-PivotSelector-item-close:hover {
+  color: #7E8B8C;
+}

@@ -1,0 +1,188 @@
+
+.p-SchemaList {
+  display: flex;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.p-SchemaList-search {
+  flex: 0 0 auto;
+}
+
+
+.p-SchemaList-content {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0;
+  min-height: 0;
+  overflow: auto;
+  list-style-type: none;
+}
+
+
+.p-SchemaList-header {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.p-SchemaList-itemShortcut {
+  float: right;
+}
+
+
+.p-SchemaList-itemLabel {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/*-----------------------------------------------------------------------------
+| Copyright (c) 2014-2017, PhosphorJS Contributors
+|
+| Distributed under the terms of the BSD 3-Clause License.
+|
+| The full license is in the file LICENSE, distributed with this software.
+|----------------------------------------------------------------------------*/
+
+/* Specializatin */
+
+.p-SchemaList {
+  min-width: 150px;
+  font-family: sans-serif;
+  border-right: 1px solid #C0C0C0;
+ /* background: #F5F5F5; */
+}
+
+
+/*.p-schemaList-drag {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  background: #DDE4E6;
+  border-radius: 16px;
+}*/
+
+
+.p-SchemaList-search {
+  padding: 6px;
+}
+
+
+.p-SchemaList-search-wrapper {
+  padding: 4px 6px;
+  background: white;
+  border: 1px solid #E0E0E0;
+}
+
+.p-SchemaList-search-wrapper > div {
+  overflow: hidden;
+}
+
+.p-SchemaList-searchIcon::before {
+  font-family: 'Material Icons';
+  font-size: 20px;
+  color: #E5E5E5;
+  content: '\e8b6';
+  float: left;
+  margin-right: 4px;
+}
+
+
+.p-SchemaList-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 12px;
+}
+
+
+.p-SchemaList-header {
+  padding: 4px;
+  color: #757575;
+  font-size: 12px;
+  font-weight: 600;
+  background: #E1E1E1;
+  cursor: pointer;
+}
+
+
+.p-SchemaList-header:hover::before {
+  content: '\2026'; /* ellipsis */
+  float: right;
+  margin-right: 4px;
+}
+
+
+.p-SchemaList-header > mark {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+
+.p-SchemaList-item {
+  padding: 4px 8px;
+  color: #757575;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+.p-SchemaList-emptyMessage {
+  padding: 4px;
+  color: #757575;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.p-SchemaList-item.p-mod-drag-image {
+  margin: 0px 4px;
+  padding: 3px 10px;
+  user-select: none;
+  background: #DDE4E6;
+  border-radius: 16px;
+  line-height: 24px;
+}
+
+.p-SchemaList-item.p-mod-disabled {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+
+.p-SchemaList-item.p-mod-active {
+  background: #7FDBFF;
+}
+
+
+.p-SchemaList-item:hover:not(.p-mod-active):not(.p-mod-disabled) {
+  background: #E5E5E5;
+}
+
+
+.p-SchemaList-itemLabel > mark {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+
+.p-SchemaList-item.p-mod-disabled mark {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+.p-SchemaList-itemCaption {
+  color: #9E9E9E;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+
